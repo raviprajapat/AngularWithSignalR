@@ -1,0 +1,51 @@
+﻿.jumbotron-custom
+{
+    line-height: 2.1428571435;
+    color: inherit;
+    padding: 20px;
+    margin-top: 10px;
+    background-color: #E5E6F0;
+}
+
+ul.list-group li
+{
+    cursor: pointer;
+}
+
+div.input-group
+{
+    margin-bottom: 2px;
+}
+div.panel-body
+{
+    padding: 4px;
+}
+
+.panel-body
+{
+    max-height: 500px;
+    overflow-y: scroll;
+}
+
+.userName
+{
+    padding: 4px;
+    text-align: left;
+    font-size: 15pt;
+    color: Blue;
+    font-weight: bold;
+}
+.message
+{
+    padding: 4px;
+    padding-left:150px;
+}
+
+.message-inner
+{
+    padding: 4px;
+    font-size: 15pt;
+    /*border: 1px solid green;*/
+    border-radius: 2px;
+    background-color: #ECECEC;
+}

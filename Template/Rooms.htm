@@ -1,0 +1,66 @@
+﻿<div class="container theme-showcase">
+    <div class="jumbotron-custom">
+        <div style="text-align: center">
+            <h2>
+                User Name : {{UserName}}
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-group">
+                    <li class="list-group-item" ng-repeat="room in rooms" ng-click="openChatPanel(room.RoomId,room.RoomName);">
+                        <span class="badge">{{room.UnReadMsgCount}}</span> {{room.RoomName}} </li>
+                </ul>
+            </div>
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                            {{RoomName}}</h3>
+                    </div>
+                    <div class="panel-body" style="height: 500px">
+                        <!--<table class="table">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Sender User
+                                    </th>
+                                    <th>
+                                        Message
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr ng-repeat="chat in chatHistory">
+                                    <td>
+                                        {{chat.SendUser}}
+                                    </td>
+                                    <td>
+                                        {{chat.Text}}
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>-->
+                        <div ng-repeat="chat in chatHistory">
+                            <div class="userName">
+                                {{chat.SendUser}}</div>
+                            <div class="message ">
+                                <div class="message-inner">
+                                    {{chat.Text}}</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <input id="txtMessage" type="text" class="form-control" ng-model="typeMessage" ng-keypress="sendMsgOnEnter($event)"
+                            ng-disabled="typemsgdisable" />
+                        <span class="input-group-btn">
+                            <button id="btnsend" class="btn btn-default" type="button" ng-click="sendMessage();"
+                                ng-disabled="typemsgdisable">
+                                Send</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
