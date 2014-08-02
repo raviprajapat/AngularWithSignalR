@@ -25,6 +25,11 @@ app.controller("Rooms", function ($scope, RoomFactory, signalR) {
         });
         $scope.$apply();
     };
+
+    $scope.setcolor = function (unreadCount) {
+        if (unreadCount > 0)
+            return { 'background-color': 'red' };
+    };
     $scope.sendMsgOnEnter = function ($event) {
         if ($event.keyCode == 13) {
             $scope.sendMessage();
@@ -41,10 +46,10 @@ app.controller("Rooms", function ($scope, RoomFactory, signalR) {
             $scope.$apply();
         }
         else {
-           
-            angular.forEach($scope.rooms, function (room,key) {
+            angular.forEach($scope.rooms, function (room, key) {
                 if (message.RoomId == room.RoomId) {
-                    room.UnReadMsgCount = room.UnReadMsgCount + 1;
+                    //room.UnReadMsgCount = room.UnReadMsgCount + 1;
+                    $scope.rooms[key].UnReadMsgCount = room.UnReadMsgCount + 1;
                 }
             });
             $scope.$apply();

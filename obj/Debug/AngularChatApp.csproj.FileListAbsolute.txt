@@ -22,8 +22,13 @@ D:\Development\GitHub Project\AngularWithSignalR\bin\Microsoft.AspNet.SignalR.Co
 D:\Development\GitHub Project\AngularWithSignalR\bin\Microsoft.AspNet.SignalR.Owin.xml
 D:\Development\GitHub Project\AngularWithSignalR\bin\Microsoft.AspNet.SignalR.SystemWeb.xml
 D:\Development\GitHub Project\AngularWithSignalR\bin\Microsoft.Owin.Host.SystemWeb.xml
-D:\Development\GitHub Project\AngularWithSignalR\bin\Microsoft.Web.Infrastructure.xml
 D:\Development\GitHub Project\AngularWithSignalR\bin\Newtonsoft.Json.xml
 D:\Development\GitHub Project\AngularWithSignalR\obj\Debug\AngularChatApp.csprojResolveAssemblyReference.cache
 D:\Development\GitHub Project\AngularWithSignalR\obj\Debug\AngularChatApp.dll
 D:\Development\GitHub Project\AngularWithSignalR\obj\Debug\AngularChatApp.pdb
+D:\Development\GitHub Project\AngularWithSignalR\bin\Microsoft.AspNet.SignalR.Core.dll
+D:\Development\GitHub Project\AngularWithSignalR\bin\Microsoft.AspNet.SignalR.Owin.dll
+D:\Development\GitHub Project\AngularWithSignalR\bin\Microsoft.AspNet.SignalR.SystemWeb.dll
+D:\Development\GitHub Project\AngularWithSignalR\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\Development\GitHub Project\AngularWithSignalR\bin\Newtonsoft.Json.dll
+D:\Development\GitHub Project\AngularWithSignalR\bin\Owin.dll

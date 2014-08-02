@@ -9,7 +9,7 @@
             <div class="col-md-3">
                 <ul class="list-group">
                     <li class="list-group-item" ng-repeat="room in rooms" ng-click="openChatPanel(room.RoomId,room.RoomName);">
-                        <span class="badge">{{room.UnReadMsgCount}}</span> {{room.RoomName}} </li>
+                        <span class="badge" ng-style="setcolor(room.UnReadMsgCount)">{{room.UnReadMsgCount}}</span> {{room.RoomName}} </li>
                 </ul>
             </div>
             <div class="col-md-8">
@@ -19,28 +19,6 @@
                             {{RoomName}}</h3>
                     </div>
                     <div class="panel-body" style="height: 500px">
-                        <!--<table class="table">
-                            <thead>
-                                <tr>
-                                    <th>
-                                        Sender User
-                                    </th>
-                                    <th>
-                                        Message
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr ng-repeat="chat in chatHistory">
-                                    <td>
-                                        {{chat.SendUser}}
-                                    </td>
-                                    <td>
-                                        {{chat.Text}}
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>-->
                         <div ng-repeat="chat in chatHistory">
                             <div class="userName">
                                 {{chat.SendUser}}</div>
